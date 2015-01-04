@@ -19,7 +19,7 @@ branches:
 #  - chmod u+x ./travis.sh
 
 install:
-  - echo let us start
+    - grunt
 
 #script:
 #  - bash -x ./travis.sh
