@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/arielschiavoni/angular-phonecat.png?branch=master)](https://travis-ci.org/arielschiavoni/angular-phonecat)
-[![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/arielschiavoni/angular-phonecat.png)](https://webops.nodejitsu.com#nodejitsu/webhooks)
+[![Build Status](https://travis-ci.org/brownman/angular_showcase.png?branch=master)](https://travis-ci.org/brownman/angular_showcase)
+[![Nodejitsu Deploy Status Badges](https://webhooks.nodejitsu.com/brownman/angular_showcase.png)](https://webops.nodejitsu.com#nodejitsu/webhooks)
 
 # AngularJS Phone Catalog Tutorial Application + Nodejistsu Continuous Deployment
 
