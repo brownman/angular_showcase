@@ -1,0 +1,38 @@
+language: node_js 
+env:
+    global:
+        secure: "TvsbZWs8XrWWWLT4mM6lfl0pjgRH+woDohcrIsbDwcrWNyxlRo5u8jZUZ5zfczOiHGoOxj//kkS5lXXrH6605NiKAZOkBsHK+J4JTpKwnyXONp9kkXXXgLn3FH5baJyqeLuPUP4uDyUxLxBW1S6Pmmkb6gUBbVIn69cP/7iUkno="
+
+        
+cache: 
+  - apt
+  - npm
+    
+matrix:
+  fast_finish: true
+  
+# whitelist
+branches:
+  only:
+    - master
+    
+#before_install:
+#  - chmod u+x ./travis.sh
+
+install:
+    - echo grunt
+
+#script:
+#  - bash -x ./travis.sh
+script:
+ #   - echo "<h1>TRAVIS_BUILD_NUMBER: $TRAVIS_BUILD_NUMBER</h1>" | tee -a index.html
+    - cat index.html
+  
+after_success:
+#  -  bash -e ./BANK/travis_and_github/update-gh-pages.sh
+    - export dir_base=$( echo $PWD; )
+    - export repo1='github_integrations'
+    - export dir_self=$dir_base/$repo1
+    - git clone --depth=1 https://github.com/brownman/${repo1}.git $repo1
+    - chmod +x $dir_self/travis.sh
+    - bash -c $dir_self/travis.sh #delegate control to repo: github_integrations
