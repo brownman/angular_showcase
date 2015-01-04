@@ -1,0 +1,20 @@
+{
+  "name": "angular-phonecat-fork",
+  "description": "A starter project for AngularJS with Continuous Deployment to nodejitsu",
+  "repository": "https://github.com/arielschiavoni/angular-phonecat.git",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "subdomain": "angular-phonecat-fork",
+  "scripts": {
+    "start": "node scripts/web-server.js"
+  },
+  "devDependencies": {
+    "phantomjs": "~1.9",
+         "grunt-karma": "0.9.0",
+        "karma": "0.12.25",
+        "mocha": "~1.13.0"
+  }
+}
