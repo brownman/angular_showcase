@@ -3,20 +3,20 @@ language: node_js
 node_js:
   - 0.10
 
-notifications:
-  webhooks:
-    urls:
-      - http://webhooks.nodejitsu.com/1/deploy
-    on_success: always
-    on_failure: never
-  email:
-    recipients:
-      - arielschiavoni@gmail.com
-    on_success: always  # [always|never|change] # default: change
-    on_failure: always  # [always|never|change] # default: always
-  irc:
-    channels:
-      - "irc.mozilla.org#angular-phonecat-fork"
+#notifications:
+#  webhooks:
+#    urls:
+#      - http://webhooks.nodejitsu.com/1/deploy
+#    on_success: always
+#    on_failure: never
+#  email:
+#    recipients:
+#      - arielschiavoni@gmail.com
+#    on_success: always  # [always|never|change] # default: change
+#    on_failure: always  # [always|never|change] # default: always
+#  irc:
+#    channels:
+#      - "irc.mozilla.org#angular-phonecat-fork"
     # template:
     #   - "%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}"
     #   - "Change view : %{compare_url}"
