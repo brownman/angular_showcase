@@ -10,7 +10,7 @@ module.exports = function(config){
 
     autoWatch : false,
 
-    browsers : ['Chrome'],
+    browsers : ['PhantomJS'],
 
     frameworks: ['ng-scenario'],
 
